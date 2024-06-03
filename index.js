@@ -2,14 +2,18 @@ const originalForm = document.querySelector("#input-el").innerHTML;
 
 function popUp(event) {
   event.preventDefault();
-  let inputElement = document.querySelector("#input-el");
-  inputElement.innerHTML = "You've Checked in Successfully!!";
-  let buttonElement = document.querySelector("#submit");
-  buttonElement.textContent = "Done";
-  buttonElement.removeEventListener("click", popUp);
-  buttonElement.addEventListener("click", restoreForm);
+  let inputElement = document.querySelector("#text-input");
+  if (!inputElement.value.trim()) {
+    alert("Please fill in all the fields");
+  } else {
+    let inputElContainer = document.querySelector("#input-el");
+    inputElContainer.innerHTML = "You've Checked in Successfully!!";
+    let buttonElement = document.querySelector("#submit");
+    buttonElement.textContent = "Done";
+    buttonElement.removeEventListener("click", popUp);
+    buttonElement.addEventListener("click", restoreForm);
+  }
 }
-
 function restoreForm(event) {
   event.preventDefault();
   let inputElement = document.querySelector("#input-el");
