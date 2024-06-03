@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  max-width: 800px;
+  height: auto;
+  background-color: blueviolet;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+  padding-bottom: 20px;
+}
+.right {
+  width: 300px;
+}
