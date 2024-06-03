@@ -19,53 +19,22 @@
   </head>
   <body>
     <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <div class="card mt-3" style="width: 18rem">
-            <img
-              src="images/background-img.jpg"
-              class="card-img-top"
-              alt="image"
-            />
-            <div class="card-body">
-              <p class="card-text">Welcome to StayFit Fitness<br />Center</p>
-            </div>
-          </div>
-        </div>
+      <div class="left">
+        <h1>
+          Welcome to<br />StayFit Fitness<br />
+          Center
+        </h1>
       </div>
       <div class="right">
-        <div class="row p-2 mt-3">
-          <div class="col-md-12 mb-3">
-            <input
-              type="text"
-              class="form-control"
-              placeholder="First name"
-              aria-label="First name"
-            />
-          </div>
-          <div class="col-md-12 mb-3">
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Last name"
-              aria-label="Last name"
-            />
-          </div>
-          <div class="col-md-12 mb-3">
-            <input
-              type="email"
-              class="form-control"
-              placeholder="email"
-              aria-label="email"
-            />
-          </div>
-
-          <div class="col-md-6 text-center">
-            <button class="btn btn-primary" type="button">Submit</button>
-          </div>
+        <div class="input-container" id="input-el">
+          <input type="text" placeholder="name" />
+          <input type="email" name="email" placeholder="name" />
+          <input type="phone" placeholder="phone" />
         </div>
+        <button id="submit">Submit</button>
       </div>
     </div>
+
     <script src="index.js"></script>
   </body>
 </html>
